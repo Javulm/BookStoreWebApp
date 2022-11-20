@@ -1,0 +1,38 @@
+<header class="header-content">
+    <div class="header-text">
+        <span class="book-text">Books</span>
+        <span class="counter-text">({{booklist.length}} items)</span>
+    </div>
+    <div class="sort-content">
+        <mat-form-field appearance="fill" color="primary">
+            <mat-label>Sort by relevance</mat-label>
+            <mat-select name="filter" id="filter" [(ngModel)]="sortby" [ngModelOptions]="{standalone: true}"
+                (change)="sortBooks()">
+                <mat-option>none</mat-option>
+                <mat-option value="asc">price: Low to High</mat-option>
+                <mat-option value="desc">price: High to Low</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+</header>
+<div class="container">
+    <mat-card class="book-card" *ngFor="let book of booklist">
+        <mat-card-header class="card-header">
+            <img mat-card-lg-image class="image" src="{{book.bookLogo}}" alt="book">
+            <div class="overlay">{{book.bookDescription}}</div>
+        </mat-card-header>
+        <mat-card-content>
+            <mat-card-title class="book-name">
+                {{book.bookName}}
+            </mat-card-title>
+            <mat-card-subtitle>
+                <p class="author-name">By {{book.bookAuthor}}</p>
+                <p class="price"> Rs.{{book.bookPrice}} </p>
+            </mat-card-subtitle>
+        </mat-card-content>
+        <mat-card-actions class="button-content">
+            <button mat-raised-button color="warn">Add to Cart</button>
+            <button mat-raised-button> Wishlist</button>
+        </mat-card-actions>
+    </mat-card>
+</div>

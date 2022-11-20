@@ -1,0 +1,115 @@
+.header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 11%;
+    margin-top: 20px;
+}
+
+.form-content {
+    margin-left: 10%;
+    width: 80%;
+}
+
+.book-text {
+    font: normal normal normal 25px/30px Lato;
+}
+
+.sort-content {
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.add-button {
+    background: brown;
+}
+
+.counter-text {
+    font: normal normal normal 12px/15px Lato;
+    color: #9D9D9D;
+    margin-left: 5px;
+}
+
+.book-card {
+    width: 250px;
+    margin: 5px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 10px 2px #6363639d;
+}
+
+.card-header:hover .overlay {
+    opacity: 1;
+}
+
+.card-header {
+    background-color: #f5f5f5;
+}
+
+.image {
+    margin: 15%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: space-between;
+    margin-left: 11%;
+    width: 80%;
+}
+
+mat-card-content {
+    margin-top: 20px;
+}
+
+.book-name {
+    text-align: left;
+    font: normal normal normal 14px/17px Lato;
+    letter-spacing: 0px;
+    color: #0A0102;
+    opacity: 1;
+}
+
+.author-name {
+    text-align: left;
+    font: normal normal normal 10px/12px Roboto;
+    letter-spacing: 0px;
+    color: #9D9D9D;
+    opacity: 1;
+}
+
+.price {
+    text-align: left;
+    font: normal normal bold 12px/15px Lato;
+    letter-spacing: 0px;
+    color: #0A0102;
+    opacity: 1;
+}
+
+.overlay {
+    position: absolute;
+    background: rgb(255, 255, 255);
+    color: #9D9D9D;
+    transition: .5s ease;
+    width: 100%;
+    opacity: 0;
+    font-size: 12px;
+    padding: 20px;
+    text-align: left;
+    border: 1px solid #9D9D9D;
+    border-radius: 3px;
+}
+
+button {
+    color: brown;
+    text-transform: uppercase;
+    font: normal normal bold 12px/15px Roboto;
+}
+
+.button-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}

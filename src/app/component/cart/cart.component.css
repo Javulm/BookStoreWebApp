@@ -1,0 +1,196 @@
+.main-content {
+    width: 60%;
+    margin-left: 11%;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 2px;
+    border: 1px solid #b3b3b3;
+    background-color: white;
+}
+
+.form {
+    margin: 20px 30px 15px 30px;
+}
+
+.cart-text {
+    font: normal normal bold 18px/22px Sans-serif;
+    letter-spacing: 0px;
+    color: #252525;
+    opacity: 1;
+}
+
+img {
+    margin-top: 5%;
+    width: 15%;
+    height: 10%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+.book-content {
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.book-name {
+    text-align: left;
+    font: normal normal normal 20px/22px Sans-serif;
+    letter-spacing: 0px;
+    color: #0A0102;
+    opacity: 1;
+}
+
+.book-author {
+    text-align: left;
+    font: normal normal normal 14px/17px Sans-serif;
+    letter-spacing: 0px;
+    color: #8a8a8a;
+    opacity: 1;
+}
+
+.book-price {
+    text-align: left;
+    font: normal normal bold 18px/20px Sans-serif;
+    letter-spacing: 0px;
+    color: #0A0102;
+    opacity: 1;
+}
+
+.input-quantity {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    margin-top: 35%;
+    justify-content: space-between;
+}
+
+.input-counter {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid rgb(104, 104, 104);
+    width: 40px;
+    height: 25px;
+}
+
+.counter {
+    margin: 2px;
+}
+
+.btn {
+    height: 25px;
+    width: 25px;
+    border-radius: 12.5px;
+    border-color: #afafaf;
+    background-color: white;
+    color: rgb(104, 104, 104);
+}
+
+.place-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.remove-button {
+    margin-right: 5%;
+}
+
+.customer-container {
+    margin-top: 20px;
+    width: 100%;
+    border: 1px solid #b3b3b3;
+}
+
+.customer-content {
+    margin: 20px 30px 15px 30px;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.customer-text {
+    text-align: left;
+    font: normal normal normal 15px/18px Lato;
+    letter-spacing: 0px;
+    color: #333232;
+    opacity: 1;
+}
+
+.edit-text {
+    text-align: left;
+    font: normal normal normal 14px/17px Lato;
+    letter-spacing: 0px;
+    color: #333232;
+    opacity: 1;
+}
+
+.form-container {
+    margin-top: 15px;
+    width: 70%;
+}
+
+.form-fields {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.form-width {
+    width: 100%;
+}
+
+.radio-type {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.type-text {
+    text-align: left;
+    font: normal normal normal 15px/18px Lato;
+    letter-spacing: 0px;
+    color: #333232;
+    opacity: 1;
+}
+
+.radio-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.continue-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.order-container {
+    margin-top: 20px;
+    width: 100%;
+    border: 1px solid #b3b3b3;
+}
+
+.order-content {
+    margin: 20px 30px 15px 30px;
+}
+
+.checkout-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
