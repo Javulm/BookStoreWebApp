@@ -13,35 +13,41 @@ import { HeaderComponent } from '../header/header.component';
 export class HomeComponent implements OnInit {
   constructor(private router: Router, private bookService: BookService, private headerCom: HeaderComponent) { }
   booklist: Book[] = [];
-  sortby: string = "";
+  sortby = 'relevance';
+  search: any;
 
   ngOnInit(): void {
-    console.log('sort:', this.sortby)
-    if (this.headerCom.books != null) {
-      this.headerCom.searchByBookname();
-    }
-    if (this.sortby != null) {
+    this.sortBooks(this.sortby);
+  }
+  sortBooks(deviceValue: any) {
+    this.sortby = deviceValue
+    if (this.sortby == 'relevance') {
       this.bookService.getBookData().subscribe((bookdata: any) => {
         this.booklist = bookdata.data;
         console.log(this.booklist);
       });
-    } else {
-      this.sortBooks();
-      this.booklist = this.headerCom.books;
     }
-  }
-  sortBooks() {
-    if (this.sortby == "asc") {
+    if (this.sortby == 'asc') {
       this.bookService.sortBooksByPriceAsc().subscribe((data: any) => {
         this.booklist = data.data;
         console.log(this.booklist)
       });
     }
-    if (this.sortby == "desc") {
+    if (this.sortby == 'desc') {
       this.bookService.sortBooksByPriceDesc().subscribe((data: any) => {
         this.booklist = data.data;
         console.log(this.booklist)
       });
+    }
+  }
+  searchByBook() {
+    if (this.search != '') {
+      this.bookService.searchBookByName(this.search).subscribe((data: any) => {
+        this.booklist = data.data;
+        console.log('books', this.booklist);
+      });
+    } else {
+      this.ngOnInit();
     }
   }
 

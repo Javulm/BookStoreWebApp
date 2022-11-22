@@ -1,1 +1,41 @@
-<p>register works!</p>
+<body class="main">
+    <div class="main-content">
+        <form class="form-content">
+            <div class="container">
+                <div class="logo-content">
+                    <img class="image" src="../../../assets/login.png" alt="logo">
+                </div>
+                <div class="logintext">
+                    <span>Login</span>
+                </div>
+                <div class="input-field">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Full name</mat-label>
+                        <input matInput placeholder="Enter full name">
+                        <mat-icon color="warn" matSuffix>person</mat-icon>
+                    </mat-form-field>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Email</mat-label>
+                        <input matInput placeholder="Enter email">
+                        <mat-icon color="warn" matSuffix>email</mat-icon>
+                    </mat-form-field>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Phone Number</mat-label>
+                        <input matInput placeholder="Enter phone number">
+                        <mat-icon color="warn" matSuffix>phone</mat-icon>
+                    </mat-form-field>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Enter new password</mat-label>
+                        <input matInput [type]="hide ? 'password' : 'text'">
+                        <button color="warn" mat-icon-button matSuffix (click)="hide = !hide"
+                            [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                        </button>
+                    </mat-form-field>
+                </div>
+                <button mat-raised-button (click)="onClickHome()" color="warn">Register</button>
+            </div>
+        </form>
+
+    </div>
+</body>

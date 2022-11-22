@@ -1,0 +1,55 @@
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+img {
+    background: transparent
+}
+
+.centered {
+    position: absolute;
+    text-align: left;
+    font: normal normal bold 25px/30px Lato;
+    letter-spacing: 0px;
+    color: #333232;
+    text-transform: capitalize;
+    opacity: 1;
+    margin-top: 135px;
+}
+
+.message {
+    text-align: center;
+    width: 20%;
+    margin-left: 40%;
+    margin-top: 40px;
+    text-align: center;
+    font: normal normal normal 18px/22px Lato;
+    letter-spacing: 0px;
+    color: #333232;
+    opacity: 1;
+}
+
+.table-main {
+    display: flex;
+    justify-content: center;
+    margin-left: 21%;
+    margin-top: 40px;
+    width: 60%;
+}
+
+th,
+td {
+    width: 30%;
+    text-align: center;
+    border: 1px solid gray;
+}
+
+.shop-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}

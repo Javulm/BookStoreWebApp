@@ -7,7 +7,8 @@ import { OrderComponent } from './component/order/order.component';
 import { RegisterComponent } from './component/register/register.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '', component: LoginComponent },
+  { path: 'home', component: HomeComponent },
   { path: 'cart', component: CartComponent },
   { path: 'order', component: OrderComponent },
   { path: 'login', component: LoginComponent },

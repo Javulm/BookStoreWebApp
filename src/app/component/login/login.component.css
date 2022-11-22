@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../../assets/Background.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-filter: blur(8px);
+    filter: blur(8px);
+    background-size: cover;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+}
+
+.form-content {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 30%;
+    height: 80%;
+    border-radius: 10px;
+}
+
+.logo-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
+
+}
+
+.logintext {
+    font-family: serif;
+    color: brown;
+    font-size: 30px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.image {
+    width: 120px;
+}
+
+.input-field {
+    margin-top: 10px;
+}
+
+mat-form-field,
+button {
+    margin-left: 10%;
+    width: 80%;
+}
+
+button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.forget-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-family: serif;
+    margin-right: 10%;
+    cursor: pointer;
+}
+
+.forget-text:hover {
+    color: brown;
+}
+
+.text {
+    font-family: serif;
+    font-size: large;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.register-text {
+    font-family: serif;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.register-text:hover {
+    color: brown;
+}

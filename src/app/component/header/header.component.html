@@ -3,12 +3,12 @@
         <img src="../../../assets/education.svg" alt="logo">
         <span class="bookstore-text">Bookstore</span>
     </div>
-    <input matInput class="input-search" type="text" class="form-control" placeholder="Search" name="search"
-        [(ngModel)]="search" (input)="searchByBookname()">
     <span class="spacer"></span>
     <div class="cart-icon">
         <span class="cart-text">cart</span>
         <mat-icon routerLink="cart">shopping_cart</mat-icon>
+        <mat-icon routerLink="/" class="exit">exit_to_app</mat-icon>
+
     </div>
 </mat-toolbar>
 <router-outlet></router-outlet>

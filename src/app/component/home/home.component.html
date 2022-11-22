@@ -1,3 +1,7 @@
+<form class="form-inline">
+    <input matInput class="input-content" type="text" id="search" class="input-search" placeholder="Search"
+        name="search" [(ngModel)]="search" (input)="searchByBook()" [ngModelOptions]="{standalone: true}">
+</form>
 <header class="header-content">
     <div class="header-text">
         <span class="book-text">Books</span>
@@ -5,10 +9,9 @@
     </div>
     <div class="sort-content">
         <mat-form-field appearance="fill" color="primary">
-            <mat-label>Sort by relevance</mat-label>
-            <mat-select name="filter" id="filter" [(ngModel)]="sortby" [ngModelOptions]="{standalone: true}"
-                (change)="sortBooks()">
-                <mat-option>none</mat-option>
+            <mat-select id="sort" [(ngModel)]="sortby" [ngModelOptions]="{standalone: true}"
+                (ngModelChange)="sortBooks($event)">
+                <mat-option value="relevance">Sort by relevance</mat-option>
                 <mat-option value="asc">price: Low to High</mat-option>
                 <mat-option value="desc">price: High to Low</mat-option>
             </mat-select>
@@ -31,7 +34,7 @@
             </mat-card-subtitle>
         </mat-card-content>
         <mat-card-actions class="button-content">
-            <button mat-raised-button color="warn">Add to Cart</button>
+            <button mat-raised-button color="warn" class="addcart">Add to Cart</button>
             <button mat-raised-button> Wishlist</button>
         </mat-card-actions>
     </mat-card>

@@ -10,6 +10,6 @@ export class OrderComponent {
   constructor(private router: Router) { }
 
   onClickShopping() {
-    this.router.navigate(['/'])
+    this.router.navigate(['home'])
   }
 }
